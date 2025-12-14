@@ -21,7 +21,7 @@ use warnings;
 use CPAN::Test::Dummy::Perl5::cpm::Builder;
 use JSON::PP ();
 
-CPAN::Test::Dummy::Perl5::cpm::Builder::function_that_only_exists_in_v1();
+CPAN::Test::Dummy::Perl5::cpm::Builder::function_that_only_exists_in_v2();
 
 my $config_argv = JSON::PP->new->utf8->decode(<<'EOF');
   %s
@@ -29,7 +29,7 @@ EOF
 CPAN::Test::Dummy::Perl5::cpm::Builder::Build($config_argv, @ARGV);
 TEMPLATE
 
-sub function_that_only_exists_in_v1 {
+sub function_that_only_exists_in_v2 {
 }
 
 sub Build_PL {
