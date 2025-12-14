@@ -27,7 +27,7 @@ my %WriteMakefileArgs = (
     "Getopt::Long" => 0,
     "JSON::PP" => 0
   },
-  "VERSION" => 1,
+  "VERSION" => 2,
   "test" => {
     "TESTS" => "t/*.t"
   }

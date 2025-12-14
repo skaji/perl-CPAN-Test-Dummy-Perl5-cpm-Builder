@@ -12,7 +12,7 @@ use File::Spec ();
 use Getopt::Long ();
 use JSON::PP ();
 
-our $VERSION = '1';
+our $VERSION = '2';
 
 my $BUILD_TEMPLATE = <<'TEMPLATE';
 #!perl
